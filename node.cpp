@@ -45,13 +45,13 @@ void Node::LoadPorts(std::istream& is)
 
 void Node::LoadNodes(std::istream& is)
 {
-	/// Load the games and update the Port ratings as you go
+	/// Load the nodes and update the Port ratings as you go
     Port src, dest;
     std::string temp = "";
     std::string src_ip, dest_ip;
     int src_port, dest_port;
 
-    // Use While loop, to identify Ports and read game results
+    // Use While loop, to identify Ports and read node results
     while (is >> src_ip >> src_port >> dest_ip >> dest_port) 
     {
         src = FindOrInsertPort(src_ip);

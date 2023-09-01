@@ -14,9 +14,8 @@ int main(int argc, char** argv)
 {
 	// To run the program, it requires 3 command line parameters:
 	// argv[0] - the application name
-	// argv[1] - the port input file
-	// argv[2] - the nodes input file
-	// argv[3] - the output file
+	// argv[1] - the nodes input file
+	// argv[2] - the output file
 	if (argc != 3) {
 		std::cout << "Usage:  app [nodes input file] [output file]" << std::endl;
 		return 0;
