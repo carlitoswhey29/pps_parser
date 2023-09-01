@@ -17,8 +17,8 @@ int main(int argc, char** argv)
 	// argv[1] - the nodes input file
 	// argv[2] - the output file
 	if (argc != 3) {
-		std::cout << "Usage:  app [nodes input file] [output file]" << std::endl;
-		return 0;
+		fprintf(stderr, "usage: %s <input filename> <output filename>\n", argv[0]);
+		return 1;
 	}
 
 	// Create the input streams
